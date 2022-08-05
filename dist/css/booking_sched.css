@@ -1,0 +1,97 @@
+#book-configuration{
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    padding: 100px 0px 300px 0px;
+    padding-bottom: 100px;
+}
+
+#book-configuration > .container{
+    padding-top: 100px;
+    width: 1500px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    display: grid;
+    place-items: center;
+    /* border: 1px red solid; */
+}
+
+
+.cinema_type_availables{
+    margin-top: 30px;
+    /* border: 1px red solid; */
+    display: flex;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.cinema_type_availables > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    /* border: 2px blue solid; */
+    border-radius: var(--radius);
+
+    max-width: 200px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 15%);
+    cursor: pointer;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.cinema_type_availables > div > p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cinema_type_availables > div:hover{
+    box-shadow: 0px 2px 6px rgba(255, 0, 92, 15%);
+
+    border: 2px var(--primary_color) solid;
+    color: var(--primary_color);
+}
+
+.booking-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.booking-footer .proceed{
+    height: 48px;
+    width: 150px;
+    background: var(--success_color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: var(--radius);
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+
+    border: none;
+}
+
+.movie_user_selected > img{
+    height: 350px;
+    width: 250px;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+
+.movie_user_selected{
+    text-align: center;
+}
+
+.movie_user_selected .movie_title > p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}

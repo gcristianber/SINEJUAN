@@ -1,0 +1,11 @@
+.scheduling_body .form-field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.scheduling_body .form-field > select{
+    height: 48px;
+    width: 250px;
+    font-size: 18px;
+}

@@ -1,0 +1,149 @@
+table{
+    height: auto;
+    width: 100%;
+    /* border: 1px red solid; */
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+table thead tr,
+table tbody tr{
+    height: 48px;
+    /* border: 1px red solid; */
+}
+
+table thead tr th,
+table tbody tr td{
+    padding: 0 10px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px;
+}
+
+table tbody tr td{
+    height: 56px;
+}
+
+table tbody tr td > img{
+    height: 100px;
+    width: 56px;
+    object-fit: cover;
+}
+
+table tbody tr td  .active_data{
+    padding: 10px 15px;
+    color: #FFF;
+    background: var(--success_color);
+    border-radius: var(--radius);
+
+}
+
+table tbody tr td  .inactive_data{
+    padding: 10px 15px;
+    color: #FFF;
+    background: #FFCD39;
+    border-radius: var(--radius);
+
+}
+
+
+table tbody tr td  .notverified_data{
+    padding: 10px 15px;
+    color: #FFF;
+    background: var(--primary_color);
+    border-radius: var(--radius);
+}
+
+table tbody tr td  .verified_data{
+    padding: 10px 15px;
+    color: #FFF;
+    background: var(--success_color);
+    border-radius: var(--radius);
+}
+
+table tbody tr td  .pendingverification_data{
+    padding: 10px 15px;
+    color: #FFF;
+    background: var(--warning_color);
+    border-radius: var(--radius);
+
+}
+
+
+table thead tr th{
+   background: var(--gray_light);
+   color: var(--gray_dark);
+}
+
+table tbody tr td .btn-actions{
+    border: 1px blue solid;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+table tbody tr td > button{
+    height: 48px;
+    width: 48px;
+    border-radius: var(--radius);
+    border: none;
+    cursor: pointer;
+}
+
+table tbody tr td > .btn-view{
+    background: var(--blue_dark);
+    color: #FFF;
+}
+
+table tbody tr td > .btn-block,
+table tbody tr td > .btn-delete{
+    background: var(--primary_color);
+    color: #FFF;
+}
+
+
+table tbody tr td > .btn-delete > a{
+    color: #FFF;
+}
+
+
+table tbody tr td .btn-actions .btn-more .btn-action_modal{
+    background: red;
+    height: 500px;
+    width: 250px;
+
+    position: absolute;
+    top: 0;
+}
+
+table tbody tr td > .avatar{
+    height: 56px;
+    width: 56px;
+    object-fit: cover;
+}
+
+table tbody tr td .btn-approve{
+    background: var(--success_color);
+    color: #FFF;
+}
+
+table tbody tr td .btn-decline{
+    background: var(--primary_color);
+    color: #FFF;
+}
+
+table tbody tr td .btn-config{
+    background: var(--success_color);
+    color: #FFF;
+}
+
+table tbody tr td .btn-config a{
+    color: #FFF;
+} 
+
+/* table tbody tr td .btn-mark{
+    background: var(--primary_color);
+    color: #FFF;
+} */

@@ -1,0 +1,160 @@
+#registration .container{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.login-form{
+    height: auto;
+    width: 500px;
+    padding: 30px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    box-shadow: 0px 8px 15px -1px rgba(168,168,168,0.23);
+    -webkit-box-shadow: 0px 8px 15px -1px rgba(168,168,168,0.23);
+    -moz-box-shadow: 0px 8px 15px -1px rgba(168,168,168,0.23);
+}
+
+.login-form .form-header{
+    text-align: center;
+}
+
+.login-form .form-header img{
+    height: 56px;
+    margin-bottom: 10px;
+}
+
+form{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.text-field{
+    height: 48px;
+    width: 100%;
+
+    position: relative;
+}
+
+.text-field > span{
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    position: absolute;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.text-field span.visibility{
+    display: block;
+}
+
+.text-field span.visibility_off{
+    display: none;
+}
+
+.text-field input.pwd{
+    padding-right: 40px;
+}
+
+.text-field input{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+
+    border-radius: var(--radius);
+    border: var(--border_unstate);;
+}
+
+.text-field input::placeholder{
+    color: #ADB5BD;
+}
+
+.form-actions .agree-conditions p{
+    display: inline;
+    font-size: 14px;
+}
+
+.form-actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.submit-btn{
+    height: 48px;
+    width: 100%;
+
+    background: var(--primary_color);
+    color: #FFFFFF;
+    border-radius: var(--radius);
+    border: none;
+
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.account-login{
+    text-align: center;
+}
+
+.account-create p{
+
+    display: inline;
+    margin-right: 10px;
+}
+
+
+
+.profile-image{
+    align-self: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 2px var(--primary_color) solid;
+
+    margin-top: 25px;
+    margin-bottom: 35px;
+
+    position: relative;
+}
+
+.profile-image > img{
+    border-radius: 100%;
+    z-index: -11;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.profile-image .add-profile-img > input[type="file"]{
+    display: none;
+}
+
+.profile-image .add-profile-img{
+    background: #FFF;
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary_color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image .add-profile-img > label{
+    display: flex;
+    color: #FFF;
+}

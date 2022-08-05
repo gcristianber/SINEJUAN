@@ -1,0 +1,138 @@
+#ticket_info{
+    height: 100vh;
+    width: 100%;
+    border: 2px red solid;
+}
+
+#ticket_info .container{
+    padding-top: 100px;
+    height: 100%;
+    border: 2px blue solid;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.user_ticket{
+    height: auto;
+    width: 450px;
+    padding: 20px;
+    border-radius: var(--radius);
+    /* border: 2px red solid; */
+    background-color: #FBFAFA;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 15%);
+}
+
+.user_ticket_header{
+    /* border: 1px blue solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.user_ticket_header >  img{
+    height: 56px;
+    object-fit: cover;
+}
+
+.movie_ticket_details,
+.user_ticket_details{
+    /* border: 1px red solid; */
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.movie_ticket_details > div,
+.user_ticket_details > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.movie_ticket_details > div > p,
+.user_ticket_details > div > p{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.movie_ticket_details > div > p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    /* border: 1px red solid;  */
+}
+
+
+.movie_ticket_details > div > p > span{
+    color: var(--primary_color);
+}
+
+.user_ticket .movie_poster {
+    /* border: 1px red solid; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.user_ticket .movie_poster > div >img{
+    height: 150px;
+    border-radius: var(--radius);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 15%);
+}
+
+.seat_selections {
+    display: flex;
+    place-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* border: 1px red solid; */
+    margin-bottom: 50px;
+
+}
+
+.seat_selections > div{
+    height: 36px;
+    width: 36px;
+    /* border: 1px red solid; */
+    background: var(--primary_color);
+    color: #FFF;
+    display: grid;
+    place-items: center;
+    border-radius: 100%;
+}
+
+.seat_selections_title{
+    /* border: 1px red solid; */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.ticket_download_btn {
+    display: flex;
+    justify-content: center;
+}
+.ticket_download_btn button{
+    height: 48px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: var(--radius);
+    background-color: var(--success_color);
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
